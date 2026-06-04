@@ -1,4 +1,6 @@
-
+/* =============================================
+   RESET & BASE
+   ============================================= */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -49,7 +51,9 @@ body {
 img { width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
-
+/* =============================================
+   BUTTONS
+   ============================================= */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -97,7 +101,9 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-ghost-link:hover { color: var(--text); }
 
-
+/* =============================================
+   NAVBAR
+   ============================================= */
 .navbar {
     position: sticky;
     top: 0;
@@ -155,7 +161,9 @@ a { color: inherit; text-decoration: none; }
     font-size: 14px;
 }
 
-
+/* =============================================
+   HERO
+   ============================================= */
 .hero {
     padding: 100px 60px 80px;
     text-align: center;
@@ -163,7 +171,7 @@ a { color: inherit; text-decoration: none; }
     overflow: hidden;
 }
 
-
+/* Subtle radial glow behind hero */
 .hero::before {
     content: '';
     position: absolute;
@@ -226,7 +234,7 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 72px;
 }
 
-
+/* Hero Screenshot (fake editor) */
 .hero-screenshot {
     max-width: 1100px;
     margin: 0 auto;
@@ -262,7 +270,7 @@ a { color: inherit; text-decoration: none; }
     height: 520px;
 }
 
-
+/* Sidebar icons */
 .screenshot-sidebar {
     background: #0d1117;
     border-right: 1px solid #161b22;
@@ -284,7 +292,7 @@ a { color: inherit; text-decoration: none; }
 }
 .sidebar-icon.active { color: #ccc; background: #1e1e2e; }
 
-
+/* File tree */
 .screenshot-filetree {
     background: #0d1117;
     border-right: 1px solid #161b22;
@@ -311,7 +319,7 @@ a { color: inherit; text-decoration: none; }
 .filetree-item:hover { background: #1e1e2e; }
 .filetree-item.muted { color: #555; }
 
-
+/* Editor */
 .screenshot-editor {
     background: #0d1117;
     border-right: 1px solid #161b22;
@@ -361,7 +369,7 @@ a { color: inherit; text-decoration: none; }
 .dc { color: var(--c-dc); }
 .cl { color: #ffcb6b; }
 
-
+/* Chat panel */
 .screenshot-chat {
     background: #0d1117;
     display: flex;
@@ -414,7 +422,9 @@ a { color: inherit; text-decoration: none; }
 }
 .chat-input-bar kbd { background: #1e1e2e; padding: 2px 6px; border-radius: 4px; font-size: 10px; color: #555; border: 1px solid #2a2a3e; }
 
-
+/* =============================================
+   LOGOS SECTION
+   ============================================= */
 .logos-section {
     padding: 60px 60px;
     text-align: center;
@@ -448,7 +458,9 @@ a { color: inherit; text-decoration: none; }
 }
 .company-logo:hover { color: var(--text-muted); }
 
-
+/* =============================================
+   FEATURE SECTIONS
+   ============================================= */
 .feature-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -509,7 +521,7 @@ a { color: inherit; text-decoration: none; }
 }
 .feature-link:hover { color: var(--text); border-color: var(--text-muted); }
 
-
+/* Code demo card */
 .code-demo-card, .chat-demo-card {
     background: #0d1117;
     border: 1px solid var(--border-2);
@@ -625,7 +637,7 @@ a { color: inherit; text-decoration: none; }
     border: 1px solid #2a2a3e;
 }
 
-
+/* Composer demo */
 .composer-demo .composer-body {
     padding: 20px;
 }
@@ -653,7 +665,9 @@ a { color: inherit; text-decoration: none; }
 .cf-item.done { color: #cdd9e5; }
 .cf-item.active { color: #82aaff; }
 
-
+/* =============================================
+   FEATURE CARDS
+   ============================================= */
 .cards-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -710,6 +724,9 @@ a { color: inherit; text-decoration: none; }
     line-height: 1.6;
 }
 
+/* =============================================
+   TESTIMONIALS
+   ============================================= */
 .testimonials-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -757,6 +774,9 @@ a { color: inherit; text-decoration: none; }
 .testi-name { font-size: 14px; font-weight: 600; color: var(--text); }
 .testi-role { font-size: 12px; color: var(--text-sub); margin-top: 2px; }
 
+/* =============================================
+   STORIES
+   ============================================= */
 .stories-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -814,6 +834,9 @@ a { color: inherit; text-decoration: none; }
     padding-bottom: 2px;
 }
 
+/* =============================================
+   CHANGELOG
+   ============================================= */
 .changelog-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -882,6 +905,9 @@ a { color: inherit; text-decoration: none; }
 }
 .cl-tag.new-tag { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3); color: #3b82f6; }
 
+/* =============================================
+   TEAM
+   ============================================= */
 .team-section {
     padding: 120px 80px;
     border-bottom: 1px solid var(--border);
@@ -927,6 +953,9 @@ a { color: inherit; text-decoration: none; }
     margin-top: 32px;
 }
 
+/* =============================================
+   FINAL CTA
+   ============================================= */
 .final-cta {
     padding: 160px 60px;
     text-align: center;
@@ -966,6 +995,9 @@ a { color: inherit; text-decoration: none; }
     color: var(--text-sub);
 }
 
+/* =============================================
+   FOOTER
+   ============================================= */
 .footer {
     border-top: 1px solid var(--border);
     padding: 72px 80px 40px;
